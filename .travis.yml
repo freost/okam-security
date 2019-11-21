@@ -7,4 +7,4 @@ python:
   - "3.8"
   - "nightly"
 
-script: python -m unittest discover -v
+script: python -m unittest discover -v -s ./tests
