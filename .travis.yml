@@ -1,0 +1,12 @@
+language: python
+
+sudo: false
+
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "nightly"
+
+script: python -m unittest discover -v
