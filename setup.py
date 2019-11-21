@@ -9,6 +9,7 @@ setup(
     description='A Python port of the Mako (PHP framework) security library.',
     author='Frederic G. Østby',
     author_email='frederic.g.ostby@gmail.com',
+    url='https://github.com/freost/okam-security',
     packages=[
         'okam.security',
     ],
@@ -19,7 +20,11 @@ setup(
     classifiers=[
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     zip_safe=False
 )
