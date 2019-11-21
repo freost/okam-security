@@ -25,7 +25,7 @@ encoded = Key.encode(key)
 
 key = Key.decode(key)
 
-# Returns a hex representation of 32 random bytes prefuxed by 'hex:',
+# Returns a hex representation of 32 random bytes prefixed by 'hex:',
 # you can also pass the number of bytes you want to return
 
 encoded = Key.generate_encoded()
