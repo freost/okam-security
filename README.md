@@ -10,7 +10,7 @@ A Python port of the [Mako](https://makoframework.com) (PHP) framework security 
 
 The `Key` class allows you to generate, encode and decode keys that can be used for cryptographic purposes.
 
-```
+```python
 from okam.security import Key
 
 # Returns 32 random bytes, you can also pass the number of bytes you want to return
@@ -35,7 +35,7 @@ encoded = Key.generate_encoded()
 
 The `Signer` class allows you to verify both the data integrity and the authentication of strings. A HMAC (hash-based message authentication code) will be prepended to your string upon signing and stripped when validated.
 
-```
+```python
 from okam.security import Key
 from okam.security import Signer
 
