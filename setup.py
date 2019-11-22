@@ -6,7 +6,6 @@ setup(
     name='okam-security',
     version='0.1.0',
     python_requires='>=3.5',
-    license='BSD',
     description='A Python port of the Mako (PHP framework) security library.',
     author='Frederic G. Østby',
     author_email='frederic.g.ostby@gmail.com',
