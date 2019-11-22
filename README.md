@@ -33,7 +33,7 @@ encoded = Key.generate_encoded()
 
 ### Signer
 
-The `Signer` class allows you to verify both the data integrity and the authentication of strings. A HMAC (hash-based message authentication code) will be prepended to your string upon signing and stripped when validated.
+The `Signer` class allows you to verify both the data integrity and the authenticity of strings. A HMAC (hash-based message authentication code) will be prepended to your string upon signing and stripped when validated.
 
 ```
 from okam.security import Key
