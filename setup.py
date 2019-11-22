@@ -2,7 +2,7 @@
 
 from setuptools import setup
 
-with open("README.md", "r") as fh:
+with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
@@ -11,6 +11,7 @@ setup(
     python_requires='>=3.5',
     description='A Python port of the Mako (PHP framework) security library.',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Frederic G. Østby',
     author_email='frederic.g.ostby@gmail.com',
     url='https://github.com/freost/okam-security',
