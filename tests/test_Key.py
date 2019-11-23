@@ -16,6 +16,12 @@ class TestKeyMethods(unittest.TestCase):
 
         self.assertEqual(key, Key.decode(encoded))
 
+    def test_decode_on_invalid_key(self):
+        with self.assertRaises(RuntimeError) as context:
+            Key.decode('foobar')
+
+        self.assertTrue('Unable to decode key: "foobar".' == str(context.exception))
+
     def test_generate_encoded(self):
         self.assertEqual(36, len(Key.generate_encoded(16))) # prefix = 4, random string = 32
 
