@@ -7,11 +7,11 @@ class Signer:
 
     MAC_LENGTH = 64
 
-    def __init__(self, secret: bytes):
-        self._secret = secret
+    def __init__(self, key: bytes):
+        self._key = key
 
     def _get_signature(self, string: str) -> str:
-        return hmac.new(self._secret, string.encode('utf-8'), hashlib.sha256).hexdigest()
+        return hmac.new(self._key, string.encode('utf-8'), hashlib.sha256).hexdigest()
 
     def sign(self, string: str) -> str:
         return '%s%s' % (self._get_signature(string), string)

@@ -7,7 +7,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='okam-security',
-    version='0.1.0',
+    version='0.1.1',
     python_requires='>=3.5',
     description='A Python port of the Mako (PHP framework) security library.',
     long_description=long_description,
